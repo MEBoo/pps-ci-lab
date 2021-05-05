@@ -20,7 +20,7 @@ jobs:
         with: # Actions parameters (action name omitted)
           java-version: 15
       - name: Build
-        run: ./gradlew check
+        run: ./gradlew build
 
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.1.2
@@ -30,4 +30,4 @@ jobs:
           prerelease: false
           title: "Development Build"
           files: |
-            build/libs/*.jar
+            *.jar
