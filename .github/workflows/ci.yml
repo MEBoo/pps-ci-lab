@@ -30,4 +30,4 @@ jobs:
           prerelease: false
           title: "Development Build"
           files: |
-            *.jar
+            build/libs/*.jar
